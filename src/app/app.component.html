@@ -2,7 +2,9 @@
   <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -20,18 +22,27 @@
 </header>
 
 <div class="form-content">
-  <form class="row g-3 shadow-sm">
+  <form class="row g-3 shadow">
     <div class="col-md-6">
       <label for="api-key" class="form-label">OpenAI API Key</label>
       <input class="form-control" id="api-key">
     </div>
     <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Modelo</label>
+      <label for="inputPassword4" class="form-label">Modelo GPT</label>
       <input class="form-control" id="inputPassword4">
     </div>
     <div class="col-12">
       <label for="mongo" class="form-label">MongoDB Atlas URL</label>
-      <input type="text" class="form-control" id="mongo" placeholder="1234 Main St">
+      <input type="text" class="form-control" id="mongo">
+    </div>
+    <div>
+      <label for="formFileLg" class="form-label">Artigos</label>
+      <input class="form-control form-control" id="formFile" type="file" multiple accept=".pdf">
+    </div>
+    <div class="col-12">
+      <label for="mongo" class="form-label">Arquitetura do Json</label>
+      <textarea type="text" class="form-control" id="textarea" rows="6">
+      </textarea>
     </div>
     <div class="col-12">
       <button type="submit" class="btn btn-dark">Enviar arquivos</button>
